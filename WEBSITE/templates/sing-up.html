@@ -1,0 +1,87 @@
+{% extends 'base.html' %} {% block title %}sign_up{% endblock %}
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta http-equiv="X-UA-Compatible"
+    content="IE=edge" />
+    <meta name="viewport"
+    
+    
+    content="width=device-width,
+    initial-scale=1.0" />
+    <title>login page</title>
+    <link rel="stylesheet" href="../static/style.css"/>
+
+<!--**** google font Font **-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    
+    <div class="wrapper">
+        <div class="login-wrapper">
+            <div class="login-header" style:="font-color: rebeccapurple;">SignUp</div>
+            <div class="login-form">
+                <div class="input-wrapper">
+                    <input type="text" id="user"
+                    class="input-field" required />
+                    <label for="user"
+                    class="label">Username</label>
+                    <i class="bx bx-user icon"></i>
+                </div>
+                   <div class="input-wrapper">
+                    <input type="text" id="email"
+                    class="input-field" required />
+                    <label for="email"
+                    class="label">your email</label>
+                    <i class="bx bx-user icon"></i>
+                </div>
+                <div class="input-wrapper">
+                    <input type="password" id="pw"
+                    class="input-field" required />
+                    <label for="pw"
+                    class="label">Password</label>
+                    <i class="bx bx-lock-alt icon"></i>
+                </div>
+                  <div class="input-wrapper">
+                    <input type="password" id="pw"
+                    class="input-field" required />
+                    <label for="pw"
+                    class="label">confirm Password</label>
+                    <i class="bx bx-lock-alt icon"></i>
+                </div>
+               
+<div class="login-check">
+                    <div class="remember">
+                        <input type="checkbox"
+                        id="remember-me" />
+                        <label
+                               for="remember-me">I agree on the <a href=""> Terms and Conditions</a></label>
+                    </div>
+                 </div>
+                   <div class="input-wrapper">
+                    <input type="submit"
+                    class="input-login"
+                    value="register"/>
+                </div>
+          
+                <div class="register">
+                    <span>you already a member? 
+                        <a href="/login">login</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>        
+    {% endblock %}
